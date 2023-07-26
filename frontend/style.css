@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient( to right, rgb(133, 133, 246), rgb(240, 209, 214));
+}
+
+header {
+    height: 7vh;
+    width: 100vw;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+li {
+    font-size: 200%;
+    padding: 10px;
+    color: white;
+    list-style: none;
+}
+
+li svg:hover {
+    cursor: pointer;
+}
+
+.todoForm {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10vh;
+    left: 18px;
+}
+
+#todoCheckbox {
+    margin: 10px;
+}
+
+#text {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 10px;
+    background-image: linear-gradient( to right, rgb(200, 200, 239), rgb(239, 134, 151));
+    height: 5vh;
+    width: 30vw;
+    padding: 10px;
+    font-size: 30px;
+}
+
+#text:focus {
+    outline: none;
+}
+
+#submit {
+    color: rgb(49, 49, 102);
+    width: 80px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-image: linear-gradient( to right, rgb(200, 200, 239), rgb(239, 134, 151));
+}
+
+.todoContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 15vh;
+    left: 10px;
+    padding-bottom: 40px;
+}
+
+.todo {
+    margin-top: 20px;
+}
+
+.todoText {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 10px;
+    background-image: linear-gradient( to right, rgb(200, 200, 239), rgb(239, 134, 151));
+    width: 28vw;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.todoText:focus {
+    outline: none;
+}
+
+.editButton {
+    color: rgb(49, 49, 102);
+    width: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-image: linear-gradient( to right, rgb(200, 200, 239), rgb(239, 134, 151));
+    position: relative;
+    bottom: 2px;
+    margin-left: 8px;
+}
+
+.deleteButton {
+    color: rgb(49, 49, 102);
+    width: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-image: linear-gradient( to right, rgb(200, 200, 239), rgb(239, 134, 151));
+    position: relative;
+    bottom: 2px;
+}

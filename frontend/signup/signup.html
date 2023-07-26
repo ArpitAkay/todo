@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo - Signup</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <form class="signup-form">
+        <div class="heading">
+            <h1>Sign Up</h1>
+        </div>
+
+        <div class="name">
+            <div class="first">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" class="nameInputBox" placeholder="Type your first name" required>
+            </div>
+    
+            <div class="last">
+                <label for="formInput2">Last Name</label>
+                <input type="text" name="lastName" id="lastName" class="nameInputBox" placeholder="Type your last name" required>
+            </div>
+        </div>
+
+        <div class="contact">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber" class="otherInputBox" placeholder="Type your phone number" pattern="[6-9]\d{9}" required>
+        </div>
+
+        <div class="emailAddress">
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" placeholder="Type your email" required>
+        </div>
+
+        <div class="passcode">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="otherInputBox" placeholder="Type your password" required>
+        </div>
+
+        <div class="button">
+            <input type="submit" value="Sign up" id="signup">
+            <a href="/login/login.html">Login Page</a>
+        </div>
+    </form>
+
+    <script src="signup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
